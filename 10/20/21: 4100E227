@@ -1,0 +1,165 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMHlPJ8QBnIGm7HyYv473QD",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Jfgp3001/JayneFame/blob/main/10/20/21%3A%204100E227\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2zFcCjyHUiIh"
+      },
+      "source": [
+        "def swap(x,y):\n",
+        "  x,y = y,x\n",
+        "  return (x,y)\n",
+        "\n",
+        "if __name__ == '_main_':\n",
+        " x = 20\n",
+        " y = 30\n",
+        " print('x = %d,y = %d' % (x,y))\n",
+        " x,y = swap (x, y)\n",
+        " print('x = %d,y = %d' % (x,y))"
+      ],
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_PEEbOPEX3Ds",
+        "outputId": "e79cd44d-9488-4f2b-ba3e-cf23489bf33e"
+      },
+      "source": [
+        "def sum(i1, i2):\n",
+        "  result = 0\n",
+        "  for i in range(i1, i2):\n",
+        "    result += i\n",
+        "    return result\n",
+        "\n",
+        "def main():\n",
+        "  print(\"sum from 10 to 30\", sum(10, 31))\n",
+        "  print(\"sum from 40 t0 50\", sum(40, 51))\n",
+        "  print(\"sum from 55 to 64\", sum(55, 65))\n",
+        "\n",
+        "main() # Call the main function"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sum from 10 to 30 10\n",
+            "sum from 40 t0 50 40\n",
+            "sum from 55 to 64 55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bFrkycnLjtbW",
+        "outputId": "7e09d093-5080-4424-c2aa-52656754a110"
+      },
+      "source": [
+        "def sort(number1, number2):\n",
+        "  if number1 < number2:\n",
+        "       return number1, number2\n",
+        "  else:\n",
+        "       return number2, number1\n",
+        "num1, num2 = sort(55, 35)\n",
+        "\n",
+        "print(\"num1 is\", num1)\n",
+        "print(\"num2 is\", num2)"
+      ],
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "num1 is 35\n",
+            "num2 is 55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ULeCSw3Qlkz6",
+        "outputId": "f5dbf7a9-8402-491b-da8f-9c4abb00c19d"
+      },
+      "source": [
+        "def sort(number1, number2, number3):\n",
+        "    if (number1 < number2) and (number1 < number3):\n",
+        "       if number2 < number3:\n",
+        "         return number1, number2,number3\n",
+        "       else:\n",
+        "         return number1, number3,number2\n",
+        "    if (number2 < number1) and (number2 < number3):\n",
+        "      if number1 < number3:\n",
+        "        return number2, number1,number3\n",
+        "      else:\n",
+        "        return number2, number3,number1\n",
+        "    if (number3 < number1) and (number3 < number2):\n",
+        "      if number1 < number2:\n",
+        "        return number3, number1, number2\n",
+        "      else:\n",
+        "        return number3, number2,number1\n",
+        "\n",
+        "num1, num2, num3 = sort(8,20,30)\n",
+        "\n",
+        "print(\"num1 is\", num1)\n",
+        "print(\"num2 is\", num2)\n",
+        "print(\"num3 is\", num3)"
+      ],
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "num1 is 8\n",
+            "num2 is 20\n",
+            "num3 is 30\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
